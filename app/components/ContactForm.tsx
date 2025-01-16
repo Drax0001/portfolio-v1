@@ -24,7 +24,7 @@ const ContactForm = () => {
           action={formAction}
         >
           <label htmlFor="name">
-            <p className="mb-1 font-medium">Name</p>
+            <p className="mb-1 font-medium text-white">Name</p>
 
             <input
               className="inputStyle w-full"
@@ -37,7 +37,7 @@ const ContactForm = () => {
           </label>
 
           <label htmlFor="email">
-            <p className="mb-1 font-medium">Email</p>
+            <p className="mb-1 font-medium text-white">Email</p>
 
             <input
               className="inputStyle w-full"
@@ -49,10 +49,10 @@ const ContactForm = () => {
             />
           </label>
           <label htmlFor="message">
-            <p className="mb-1 font-medium">Message</p>
+            <p className="mb-1 font-medium text-white">Message</p>
 
             <textarea
-              className="inputStyle w-full"
+              className="inputStyle w-full text-white"
               name="message"
               id="message"
               placeholder="Message"

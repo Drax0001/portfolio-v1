@@ -94,21 +94,25 @@ export default function Home() {
             </h1>
             <ContactForm />
             <div className="font-satoshi bg-purple-custom px-4 py-2 rounded-lg mt-6">
-              <h1 className="text-xl font-inter font-bold mb-4">
+              <h1 className="text-xl font-inter font-bold mb-4 text-reddish">
                 Personal Details
               </h1>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2">
                   <MdPhone className="text-green-500" size={20} />
-                  <span>Phone: +237673046720</span>
+                  <span className="text-gray-400">Phone: +237673046720</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MdEmail className="text-red-500" size={20} />
-                  <span>Email: berthnk@gmail.com</span>
+                  <span className="text-gray-400">
+                    Email: berthnk@gmail.com
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MdMyLocation className="text-yellow-500" size={20} />
-                  <span>Address: Buea, SouthWest - Cameroon</span>
+                  <span className="text-gray-400">
+                    Address: Buea, SouthWest - Cameroon
+                  </span>
                 </div>
               </div>
             </div>

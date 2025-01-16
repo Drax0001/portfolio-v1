@@ -46,7 +46,7 @@ export default function ProfileCard() {
         </Link>
         {/* <Image src={album} className="w-6 h-6 text-purple-500" alt="" /> */}
       </div>
-      <p className="text-gray-400 text-center max-w-80">
+      <p className="text-gray-400 text-center max-w-80 px-4">
         Hi, {`I'm`} Berthold. I specialize in creating intuitive Web and Mobile
         Apps. Fluent in both English and French, I bring a diverse perspective
         and a collaborative approach to every project.
