@@ -5,6 +5,7 @@ import ProfileCard from "./components/ProfileCard";
 import Navbar from "./components/Navbar";
 import { projects } from "@/constants/projects";
 import ProjectCard from "./components/ProjectCard";
+import FeaturedProjectCard from "./components/FeaturedProjectCard";
 import ProjectFilter from "./components/ProjectFilter";
 import SkillsSection from "./components/SkillsSection";
 import Resume from "./components/ResumeSection";
@@ -39,6 +40,9 @@ export default function Home() {
     );
   }, [selectedTechnologies]);
 
+  const featuredProjects = filteredProjects.filter((p) => p.featured);
+  const otherProjects = filteredProjects.filter((p) => !p.featured);
+
   return (
     <main className="bg-purple-custom min-h-screen ">
       <div className="px-8 max-w-2xl mx-auto flex flex-col gap-y-8">
@@ -70,17 +74,41 @@ export default function Home() {
 
             <div className="flex flex-col gap-8">
               {filteredProjects.length > 0 ? (
-                filteredProjects.map((project) => (
-                  <ProjectCard
-                    key={project.title}
-                    description={project.description}
-                    title={project.title}
-                    slug={project.slug}
-                    technologies={project.technologies}
-                    image={project.image}
-                    githubLink={project.githubLink}
-                  />
-                ))
+                <>
+                  {featuredProjects.length > 0 && (
+                    <div className="flex flex-col gap-6">
+                      <h2 className="text-lg font-inter font-semibold text-white">
+                        Featured Work
+                      </h2>
+                      {featuredProjects.map((project) => (
+                        <FeaturedProjectCard
+                          key={project.title}
+                          project={project}
+                        />
+                      ))}
+                    </div>
+                  )}
+
+                  {otherProjects.length > 0 && (
+                    <div className="flex flex-col gap-8">
+                      {featuredProjects.length > 0 && (
+                        <h2 className="text-lg font-inter font-semibold text-white">
+                          More Projects
+                        </h2>
+                      )}
+                      {otherProjects.map((project) => (
+                        <ProjectCard
+                          key={project.title}
+                          description={project.description}
+                          title={project.title}
+                          slug={project.slug}
+                          technologies={project.technologies}
+                          image={project.image}
+                        />
+                      ))}
+                    </div>
+                  )}
+                </>
               ) : (
                 <div className="text-center py-8">
                   <p className="text-gray-400 text-lg font-satoshi">
