@@ -14,6 +14,8 @@ export type ProjectType = {
   demoLabel?: string;
   // Omit for private client work
   githubLink?: string;
+  // Label shown when there is no repository link (default: "Private Client Work")
+  privateLabel?: string;
   // Case study fields, used by featured projects
   featured?: boolean;
   category?: string;

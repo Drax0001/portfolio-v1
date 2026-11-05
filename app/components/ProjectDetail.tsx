@@ -110,7 +110,7 @@ export default function ProjectDetail({ project }: Props) {
               ) : (
                 <div className="flex items-center gap-2 bg-black-high-opacity text-gray-300 px-4 py-2 rounded-lg font-satoshi sm:w-full sm:justify-center">
                   <Lock className="w-5 h-5" />
-                  Private Client Work
+                  {project.privateLabel ?? "Private Client Work"}
                 </div>
               )}
 
@@ -481,7 +481,7 @@ export default function ProjectDetail({ project }: Props) {
               ) : (
                 <div className="flex items-center justify-center gap-2 bg-purple-custom text-gray-300 px-6 py-3 rounded-lg font-satoshi w-full">
                   <Lock className="w-5 h-5" />
-                  Source code is private client work
+                  {project.privateLabel ? "Source code is private" : "Source code is private client work"}
                 </div>
               )}
 

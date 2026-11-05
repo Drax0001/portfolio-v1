@@ -19,6 +19,8 @@ import foodRecommendationThumbnail from "../public/food-recommendation-thumbnail
 import qrCampusThumbnail from "../public/qr-campus-thumbnail.jpg";
 import vizballThumbnail from "../public/vizball-thumbnail.png";
 import clientExpressThumbnail from "../public/client-express-thumbnail.png";
+import iziboshThumbnail from "../public/izibosh-thumbnail.png";
+import kordineThumbnail from "../public/kordine-thumbnail.png";
 import mamikeuThumbnail from "../public/mamikeu-thumbnail.png";
 import vizballForum from "../public/vizball-forum.png";
 import vizballAdmin from "../public/vizball-admin.png";
@@ -58,6 +60,8 @@ export {
   qrCampusThumbnail,
   vizballThumbnail,
   clientExpressThumbnail,
+  iziboshThumbnail,
+  kordineThumbnail,
   mamikeuThumbnail,
   vizballForum,
   vizballAdmin,

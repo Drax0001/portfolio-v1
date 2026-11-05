@@ -44,6 +44,15 @@ export default function ProfileCard() {
         >
           Fullstack Web and Mobile Developer
         </h3>
+        <p className="text-sm text-gray-300 mb-4 text-center px-4">
+          Co-founder &amp; lead developer at{" "}
+          <Link
+            href="#servall"
+            className="text-[#8be21b] font-semibold underline underline-offset-2"
+          >
+            ServAll Solutions
+          </Link>
+        </p>
         <div className="flex bg-white px-2.5 py-1.5 rounded-lg  space-x-4 mb-4">
           <Link href="https://github.com/Drax0001" target="_blank">
             <Image src={github} className="w-7 h-7 " alt="" />

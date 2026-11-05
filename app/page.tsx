@@ -10,6 +10,7 @@ import SkillsSection from "./components/SkillsSection";
 import Resume from "./components/ResumeSection";
 import { motion } from "framer-motion";
 import Footer from "./components/Footer";
+import ServallSpotlight from "./components/ServallSpotlight";
 import { useState, useMemo } from "react";
 import { MdEmail, MdMyLocation, MdPhone } from "react-icons/md";
 
@@ -53,6 +54,9 @@ export default function Home() {
         >
           {/* PROFILE CARD */}
           <ProfileCard />
+
+          {/* SERVALL AGENCY HIGHLIGHT */}
+          <ServallSpotlight />
 
           {/* PROJECTS SECTION */}
           <div
