@@ -147,22 +147,21 @@ export default function ProjectDetail({ project }: Props) {
         </section>
 
         {project.images && project.images.length > 0 && (
-          <section className="mt-14 grid grid-cols-2 sm:grid-cols-1 gap-4">
+          <section className="mt-14 flex flex-col gap-6">
             {project.images.map((image, i) => (
               <button
                 key={i}
                 onClick={() =>
                   setShot({ src: image, alt: `${project.title} screenshot ${i + 1}` })
                 }
-                className="group relative aspect-[16/10] rounded-xl overflow-hidden bg-plum-deep cursor-zoom-in"
+                className="group block w-full rounded-xl overflow-hidden bg-plum-deep cursor-zoom-in"
                 aria-label={`Enlarge ${project.title} screenshot ${i + 1}`}
               >
                 <Image
                   src={image}
                   alt=""
-                  fill
-                  sizes="(max-width: 639px) 100vw, 336px"
-                  className="object-cover object-top transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
+                  sizes="(max-width: 767px) 100vw, 672px"
+                  className="w-full h-auto transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]"
                 />
               </button>
             ))}

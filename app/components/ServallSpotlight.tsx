@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ExternalLink } from "pixelarticons/react";
 import {
-  clientExpressThumbnail,
+  clientExpressHero,
   iziboshThumbnail,
   kordineThumbnail,
 } from "@/constants/images";
@@ -13,7 +13,7 @@ const products = [
     title: "ClientExpress",
     tagline: "AI assistant that answers customers from your own documents.",
     meta: "Live",
-    image: clientExpressThumbnail,
+    image: clientExpressHero,
   },
   {
     href: "/projects/izibosh",
