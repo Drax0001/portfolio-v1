@@ -41,6 +41,8 @@ export const projects: ProjectType[] = [
   {
     title: "Vizball",
     slug: generateSlug("Vizball"),
+    tagline: "The official home of a Cameroonian team sport, and its browser game.",
+    year: "2026",
     image: vizballThumbnail,
     images: [vizballForum, vizballAdmin],
     featured: true,
@@ -154,6 +156,8 @@ export const projects: ProjectType[] = [
   {
     title: "Client Express",
     slug: generateSlug("Client Express"),
+    tagline: "An AI support assistant that answers only from your own documents.",
+    year: "2026",
     image: clientExpressThumbnail,
     images: [
       clientExpressDashboard,
@@ -162,7 +166,7 @@ export const projects: ProjectType[] = [
       clientExpressAnalytics,
     ],
     featured: true,
-    category: "SaaS · Solo build",
+    category: "SaaS · ServAll Solutions",
     description:
       "A bilingual SaaS that turns a business's documents into an embeddable AI support chatbot that answers only from that content.",
     detailedDescription:
@@ -274,6 +278,8 @@ export const projects: ProjectType[] = [
   {
     title: "Izibosh",
     slug: generateSlug("Izibosh"),
+    tagline: "Exam practice for Cameroonian students, with live duels and an AI tutor.",
+    year: "2026",
     image: iziboshThumbnail,
     featured: true,
     category: "SaaS · ServAll Solutions",
@@ -336,6 +342,8 @@ export const projects: ProjectType[] = [
   {
     title: "Kordine",
     slug: generateSlug("Kordine"),
+    tagline: "A private school's whole year in one tool, fees paid by Mobile Money.",
+    year: "2026",
     image: kordineThumbnail,
     featured: true,
     category: "SaaS · ServAll Solutions",
@@ -396,6 +404,8 @@ export const projects: ProjectType[] = [
   {
     title: "MAMIKEU",
     slug: generateSlug("MAMIKEU"),
+    tagline: "A bilingual NGO website built to win institutional funders.",
+    year: "2026",
     image: mamikeuThumbnail,
     featured: true,
     category: "Client work · NGO",
@@ -504,6 +514,7 @@ export const projects: ProjectType[] = [
   {
     title: "AlumConnect",
     slug: generateSlug("AlumConnect"),
+    tagline: "Alumni mentorship for the University of Buea.",
     description:
       "Alumni Mentorship Platform for the University of Buea (Unofficial)",
     detailedDescription:
@@ -524,6 +535,7 @@ export const projects: ProjectType[] = [
   {
     title: "Food Recommendation App",
     slug: generateSlug("Food Recommendation App"),
+    tagline: "Meal suggestions that respect age, allergies and diet.",
     description:
       "Food recommendation mobile application based on age, allergies and dietary  restrictions",
     detailedDescription:
@@ -549,6 +561,7 @@ export const projects: ProjectType[] = [
   {
     title: "QR Campus",
     slug: generateSlug("QR Campus"),
+    tagline: "Course registration by QR code.",
     description:
       "QR Generation and recognition mobile app for course registration",
     detailedDescription:
@@ -570,6 +583,7 @@ export const projects: ProjectType[] = [
   {
     title: "Cinemood",
     slug: generateSlug("Cinemood"),
+    tagline: "Movie picks based on how you feel.",
     description: "Web application for movie recommendations based on user mood",
     detailedDescription:
       "Cinemood is an innovative web application that recommends movies based on the user's current mood and preferences. Using AI-powered sentiment analysis and machine learning algorithms, the app analyzes user input to suggest the perfect movie for any emotional state. Features include mood tracking, personalized watchlists, movie reviews, and integration with popular streaming platforms for seamless viewing experiences.",

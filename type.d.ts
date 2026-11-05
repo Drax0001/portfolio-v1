@@ -1,9 +1,10 @@
-import { ReactNode } from "react";
-
 export type ProjectType = {
   title: string;
   slug: string;
   description: string;
+  // One short line for cards and lists
+  tagline?: string;
+  year?: string;
   detailedDescription?: string;
   // Thumbnail; when missing a branded placeholder is rendered instead
   image?: any;
@@ -46,19 +47,3 @@ export type ProjectChallengeType = {
   description: string;
 };
 
-export type SkillType = {
-  name: string;
-  icon?: ReactNode;
-  proficiency: number;
-};
-
-export type SkillCategoryType = {
-  name: string;
-  skills: SkillType[];
-};
-
-export type ContactFormType = {
-  name: string;
-  email: string;
-  message: string;
-};

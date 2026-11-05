@@ -2,57 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer base {
   @font-face {
     font-family: "Inter";
     src: url("../public/fonts/Inter-VariableFontwght.ttf");
+    font-display: swap;
   }
 
   @font-face {
     font-family: "Satoshi";
     src: url("../public/fonts/Satoshi-Variable.ttf");
+    font-display: swap;
   }
 
-  .inputStyle {
-    @apply rounded-lg px-4 py-1.5 bg-white bg-opacity-5 focus:outline-none ring-reddish ring-offset-reddish focus:ring focus:border-reddish;
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    color-scheme: dark;
+    scrollbar-color: #f15152 #2c222b;
+    scrollbar-width: thin;
+  }
+
+  body {
+    background: #3a2e39;
+    color: #f4eef3;
+    caret-color: #f15152;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #f15152;
+    color: #2c222b;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #2c222b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #f15152;
+    border: 3px solid #2c222b;
+    border-radius: 0;
+  }
+
+  :focus-visible {
+    outline: 2px dashed #f15152;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  a {
+    text-underline-offset: 0.25em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  /* Line-by-line mask reveal: the hero's one authored entrance */
+  .reveal-line {
+    display: block;
+    overflow: hidden;
+    /* room for descenders inside the mask */
+    padding-bottom: 0.12em;
+    margin-bottom: -0.12em;
+  }
+  .reveal-line > span {
+    display: block;
+    animation: reveal-up 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .reveal-line:nth-child(2) > span {
+    animation-delay: 110ms;
+  }
+  .reveal-line:nth-child(3) > span {
+    animation-delay: 220ms;
   }
 
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  /* Text link whose underline draws in from the left */
+  .draw-link {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .draw-link:hover,
+  .draw-link:focus-visible {
+    background-size: 100% 1px;
   }
 
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-line > span {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 1ms !important;
   }
 }

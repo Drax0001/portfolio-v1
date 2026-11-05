@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { X } from "lucide-react";
+import { Close } from "pixelarticons/react";
 import { useEffect } from "react";
 
 interface ImageModalProps {
@@ -64,9 +64,10 @@ export default function ImageModal({
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={onClose}
+              aria-label="Close"
               className="absolute -top-12 right-0 z-10 p-2 text-white hover:text-reddish transition-colors duration-200 bg-black-high-opacity rounded-full"
             >
-              <X className="w-6 h-6" />
+              <Close className="w-6 h-6" aria-hidden />
             </motion.button>
 
             {/* Image container */}

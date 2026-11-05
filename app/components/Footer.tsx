@@ -1,22 +1,20 @@
-import React from "react"
-import Home from "../page"
-import Resume from "./ResumeSection"
-import Link from "next/link"
+import { Chess } from "pixelarticons/react";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <div className="flex flex-col items-center gap-4 font-satoshi text-gray-400 bg-black-high-opacity rounded-t-lg py-6 md:flex-col-reverse">
-      <ul className="flex items-center justify-center gap-4 md:flex-col">
-        <Link href="#">Home</Link>
-        <Link href="/#projects">Projects</Link>
-        <Link href="/#skills">Skills</Link>
-        <Link href="/#resume">Resume</Link>
-        <Link href="/#contact">Contact</Link>
-        {/* <Link href="#">Blog</Link> */}
-      </ul>
-      <p>© 2026 Mboneng N. Berthold</p>
-    </div>
-  )
+    <footer className="mt-24 md:mt-16 py-8 border-t border-white/10 flex items-center justify-between gap-4 flex-wrap font-satoshi text-sm text-gray-400">
+      <p className="flex items-center gap-2">
+        <Chess className="w-4 h-4 text-reddish" aria-hidden />
+        Berthold&apos;s Corner · 2026
+      </p>
+      <a
+        href="https://www.chess.com/member/berthold_draxler"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="draw-link hover:text-white transition-colors"
+      >
+        Fancy a game of chess?
+      </a>
+    </footer>
+  );
 }
-
-export default Footer
