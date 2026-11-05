@@ -35,7 +35,6 @@ import foodRecommendationDetail3 from "../public/food-recommendation-detail-3.jp
 import qrCampusDetail from "../public/qr-campus-detail.jpg";
 import qrCampusDetail1 from "../public/qr-campus-detail-1.jpg";
 import qrCampusDetail2 from "../public/qr-campus-detail-2.jpg";
-import dummyImage from "../public/dummy-image.jpg";
 
 export {
   add,
@@ -74,5 +73,4 @@ export {
   qrCampusDetail,
   qrCampusDetail1,
   qrCampusDetail2,
-  dummyImage,
 };

@@ -33,7 +33,7 @@ export default function ProjectFilter({
     <div className="mb-6">
       <div className="flex items-center gap-2 mb-3">
         <h3 className="text-lg font-inter font-semibold text-white">
-          Filter by Technology:
+          Filter by technology
         </h3>
         {selectedTechnologies.length > 0 && (
           <button
@@ -45,7 +45,7 @@ export default function ProjectFilter({
         )}
       </div>
 
-      <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-2">
+      <div className="flex flex-wrap gap-2">
         {technologies.map((technology) => {
           const isSelected = selectedTechnologies.includes(technology);
 
@@ -54,8 +54,8 @@ export default function ProjectFilter({
               key={technology}
               onClick={() => handleTechnologyClick(technology)}
               className={`
-                px-4 py-2 rounded-full text-sm font-satoshi font-medium
-                whitespace-nowrap transition-all duration-200 flex-shrink-0
+                px-3 py-1.5 rounded-full text-sm font-satoshi font-medium
+                transition-all duration-200
                 ${
                   isSelected
                     ? "bg-reddish text-white shadow-lg"

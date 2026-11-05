@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import ProfileCard from "./components/ProfileCard";
 import Navbar from "./components/Navbar";
 import { projects } from "@/constants/projects";
@@ -10,10 +9,8 @@ import ProjectFilter from "./components/ProjectFilter";
 import SkillsSection from "./components/SkillsSection";
 import Resume from "./components/ResumeSection";
 import { motion } from "framer-motion";
-import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import { useState, useMemo } from "react";
-// import { Phone } from "lucide-react"
 import { MdEmail, MdMyLocation, MdPhone } from "react-icons/md";
 
 export default function Home() {
@@ -167,28 +164,28 @@ export default function Home() {
             <h1 className="text-2xl text-reddish font-inter font-bold mb-4">
               Contact
             </h1>
-            <ContactForm />
-            <div className="font-satoshi bg-purple-custom px-4 py-2 rounded-lg mt-6">
-              <h1 className="text-xl font-inter font-bold mb-4 text-reddish">
-                Personal Details
-              </h1>
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-2">
-                  <MdPhone className="text-green-500" size={20} />
-                  <span className="text-gray-400">Phone: +237673046720</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MdEmail className="text-red-500" size={20} />
-                  <span className="text-gray-400">
-                    Email: berthnk@gmail.com
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MdMyLocation className="text-yellow-500" size={20} />
-                  <span className="text-gray-400">
-                    Address: Buea, SouthWest - Cameroon
-                  </span>
-                </div>
+            <p className="font-satoshi text-gray-400 mb-4">
+              Open to new opportunities. The quickest way to reach me is by
+              email or phone.
+            </p>
+            <div className="font-satoshi bg-purple-custom p-5 rounded-lg flex flex-col gap-4">
+              <a
+                href="mailto:berthnk@gmail.com"
+                className="flex items-center gap-3 text-gray-300 hover:text-white"
+              >
+                <MdEmail className="text-red-500 shrink-0" size={22} />
+                <span>berthnk@gmail.com</span>
+              </a>
+              <a
+                href="tel:+237673046720"
+                className="flex items-center gap-3 text-gray-300 hover:text-white"
+              >
+                <MdPhone className="text-green-500 shrink-0" size={22} />
+                <span>+237 673 046 720</span>
+              </a>
+              <div className="flex items-center gap-3 text-gray-300">
+                <MdMyLocation className="text-yellow-500 shrink-0" size={22} />
+                <span>Douala, Cameroon</span>
               </div>
             </div>
           </motion.div>

@@ -13,7 +13,6 @@ import {
   qrCampusDetail,
   qrCampusDetail1,
   qrCampusDetail2,
-  dummyImage,
   vizballThumbnail,
   clientExpressThumbnail,
   mamikeuThumbnail,
@@ -386,7 +385,6 @@ export const projects: ProjectType[] = [
     detailedDescription:
       "AlumConnect is a comprehensive alumni mentorship platform designed to bridge the gap between current students and alumni of the University of Buea. The platform facilitates meaningful connections through structured mentorship programs, networking events, and career guidance sessions. Built with modern web technologies, it features user authentication, profile management, event scheduling, and real-time messaging capabilities.",
     image: alumConnect,
-    images: [dummyImage, dummyImage, dummyImage], // Placeholder images - replace with actual project images later
     technologies: ["Next.js", "TypeScript", "PostgreSQL"],
     features: [
       "Event Management",
@@ -452,7 +450,6 @@ export const projects: ProjectType[] = [
     detailedDescription:
       "Cinemood is an innovative web application that recommends movies based on the user's current mood and preferences. Using AI-powered sentiment analysis and machine learning algorithms, the app analyzes user input to suggest the perfect movie for any emotional state. Features include mood tracking, personalized watchlists, movie reviews, and integration with popular streaming platforms for seamless viewing experiences.",
     image: cinemoodThumbnail,
-    images: [dummyImage, dummyImage, dummyImage], // Placeholder images - replace with actual project images later
     technologies: ["Next.js", "TypeScript", "AI"],
     features: [
       "Movie recommendation",

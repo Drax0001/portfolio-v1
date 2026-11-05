@@ -4,41 +4,35 @@ import { Download } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function Resume() {
-  // const pdfUrl = url('/Berthold-CV.pdf')
-
   return (
     <section className="font-satoshi w-full flex flex-col gap-6">
       <div className="w-full rounded-lg bg-purple-custom p-5 gap-4">
         <div className="mb-3">
           <h2 className="text-lg font-semibold text-reddish">Resume Summary</h2>
           <p className="text-gray-400">
-            A brief overview of my professional experience and skills
+            A brief overview of my experience and education
           </p>
         </div>
         <div>
           <div className="flex flex-col gap-4">
             <div>
+              <h3 className="font-semibold mb-2 text-reddish">Work Experience</h3>
+              <ul className="list-disc list-inside text-sm text-gray-400">
+                <li>Software Developer, Servall Solutions, Douala (Dec 2025 - Present)</li>
+                <li>Software Developer, Swagg, Buea (Feb 2024 - Aug 2025)</li>
+              </ul>
+            </div>
+            <div>
               <h3 className="font-semibold mb-2 text-reddish">Education</h3>
               <ul className="list-disc list-inside text-sm text-gray-400">
-                <li>{`Bachelor of Technology, University of Buea (2021 - 2024)`}</li>
+                <li>B.Tech in Software Engineering, University of Buea (2021 - 2025)</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-2 text-reddish">
-                Work Experience
-              </h3>
+              <h3 className="font-semibold mb-2 text-reddish">Languages</h3>
               <ul className="list-disc list-inside text-sm text-gray-400">
-                <li>{`Frontend Software Developer, Swagg (2024 - Present)`}</li>
-                <li>{`Software Engineering Intern, ClingsTech (July 2023 - September 2023)`}</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2 text-reddish">Skills</h3>
-              <ul className="list-disc list-inside text-sm text-gray-400">
-                <li>
-                  Proficient in React.js, Next.js, Express.js, and other modern
-                  technologies.
-                </li>
+                <li>French (native)</li>
+                <li>English (C1 - C2)</li>
               </ul>
             </div>
           </div>

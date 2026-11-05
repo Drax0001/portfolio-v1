@@ -16,7 +16,7 @@ export default function SkillsSection() {
         <motion.div
           whileHover={{
             // position: "absolute",
-            scale: 1.25, // scale up slightly on hover
+            scale: 1.03,
             boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
           }}
           transition={{ duration: 0.3, ease: "easeInOut" }}

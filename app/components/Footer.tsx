@@ -9,11 +9,12 @@ const Footer = () => {
       <ul className="flex items-center justify-center gap-4 md:flex-col">
         <Link href="#">Home</Link>
         <Link href="/#projects">Projects</Link>
+        <Link href="/#skills">Skills</Link>
         <Link href="/#resume">Resume</Link>
         <Link href="/#contact">Contact</Link>
         {/* <Link href="#">Blog</Link> */}
       </ul>
-      <p>Made with 💖 by Berthold</p>
+      <p>© 2026 Mboneng N. Berthold</p>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { Home, Folder, Hammer, Contact, Edit, NotepadText } from "lucide-react"
+import { Home, Folder, Hammer, Contact, NotepadText } from "lucide-react"
 import NavbarLink from "./NavbarLink"
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
       transition={{ duration: 0.5, delay: 0.1 }}
       className="bg-black-high-opacity py-4 rounded-b-lg"
     >
-      <ul className="flex items-center justify-center gap-8">
+      <ul className="flex items-center justify-center gap-6 sm:gap-8">
         <NavbarLink
           href="#"
           icon={<Home className="w-5 h-5 text-white" />}
@@ -37,7 +37,6 @@ const Navbar = () => {
           icon={<Contact className="w-5 h-5 text-white" />}
           label="Contact"
         />
-        {/* <NavbarLink href="#" icon={<Edit className="w-5 h-5" />} label="Edit" /> */}
       </ul>
     </motion.nav>
   )

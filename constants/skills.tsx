@@ -2,7 +2,6 @@ import { SkillCategoryType } from "@/type";
 import {
   SiJavascript,
   SiTypescript,
-  SiKotlin,
   SiReact,
   SiNextdotjs,
   SiExpress,
@@ -11,13 +10,8 @@ import {
   SiMongodb,
   SiPostgresql,
   SiFigma,
-  SiCanva,
-  SiChatbot,
   SiPython,
 } from "react-icons/si";
-import { Brain, Clock, Figma, Lightbulb, Users } from "lucide-react";
-import { chatgpt } from "./images";
-import Image from "next/image";
 
 export const skillCategories: SkillCategoryType[] = [
   {
@@ -80,9 +74,9 @@ export const skillCategories: SkillCategoryType[] = [
         proficiency: 80,
       },
       {
-        name: "ChatGPT",
-        icon: <Image src={chatgpt} className="w-7 h-7 " alt="" />,
-        proficiency: 90,
+        name: "Figma",
+        icon: <SiFigma className="w-6 h-6 " color="#c084fc" />,
+        proficiency: 70,
       },
     ],
   },
@@ -97,46 +91,6 @@ export const skillCategories: SkillCategoryType[] = [
       {
         name: "PostgreSQL",
         icon: <SiPostgresql className="w-6 h-6 " color="#60a5fa" />,
-        proficiency: 75,
-      },
-    ],
-  },
-  {
-    name: "Design",
-    skills: [
-      {
-        name: "Figma",
-        icon: <SiFigma className="w-6 h-6 " color="#c084fc" />,
-        proficiency: 70,
-      },
-      {
-        name: "Canva",
-        icon: <SiCanva className="w-6 h-6 " color="#3b82f6" />,
-        proficiency: 75,
-      },
-    ],
-  },
-  {
-    name: "Soft Skills",
-    skills: [
-      {
-        name: "Problem Solving",
-        icon: <Brain className="w-6 h-6" color="#4ade80" />,
-        proficiency: 90,
-      },
-      {
-        name: "Teamwork",
-        icon: <Users className="w-6 h-6" color="#60a5fa" />,
-        proficiency: 95,
-      },
-      {
-        name: "Creativity",
-        icon: <Lightbulb className="w-6 h-6 " color="#facc15" />,
-        proficiency: 80,
-      },
-      {
-        name: "Time Management",
-        icon: <Clock className="w-6 h-6" color="#f87171" />,
         proficiency: 75,
       },
     ],

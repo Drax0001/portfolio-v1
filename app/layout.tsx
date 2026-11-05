@@ -1,10 +1,9 @@
 import type { Metadata } from "next"
 import "./globals.css"
-import { Toaster } from "react-hot-toast"
 
 export const metadata: Metadata = {
   title: "Berthold's Corner",
-  description: "Portfolio website designed and created by Nkengni Berthold",
+  description: "Portfolio of Mboneng Nkengni Berthold, a fullstack web and mobile developer based in Douala, Cameroon.",
 }
 
 export default function RootLayout({
@@ -18,7 +17,6 @@ export default function RootLayout({
         suppressHydrationWarning={true} // This prevents extensions from causing a server/client mismatch
       >
         {children}
-        <Toaster />
       </body>
     </html>
   )
